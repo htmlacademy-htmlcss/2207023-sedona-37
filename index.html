@@ -7,7 +7,7 @@
   </head>
   <body class="page">
     <!-- header -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="#">
           <img class="page-header-logo" alt="Логотип города Седона" src="#">
@@ -40,10 +40,11 @@
         </ul>
       </nav>
     </header>
+    <!-- end header -->
     <!-- main -->
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <!-- block hero -->
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону! Потому что Гранд-Каньон — отстой!</h1>
         <img class="welcome" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!" src="#">
         <p class="tagline">
@@ -53,8 +54,9 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
+      <!-- end block hero -->
       <!-- block advantages -->
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -106,8 +108,9 @@
           </li>
         </ul>
       </section>
+      <!-- end block advantages -->
       <!-- search hotel -->
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="tagline">
           <b>Заинтересовались?</b>
@@ -117,8 +120,9 @@
         </p>
         <a class="search-link button open-popup" href="#">Поиск гостиницы в Седоне</a>
       </section>
+      <!-- end search hotel -->
       <!-- subscribe -->
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -127,9 +131,11 @@
           <button class="newsletter-button button" type="submit">Подписаться</button>
         </form>
       </section>
+      <!-- end subscribe -->
     </main>
+    <!-- end main -->
     <!-- footer -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -154,5 +160,6 @@
         <img class="academy-logo" alt="HTML Academy" src="">
       </a>
     </footer>
+    <!-- end footer -->
   </body>
 </html>
