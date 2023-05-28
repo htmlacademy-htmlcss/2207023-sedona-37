@@ -43,6 +43,108 @@
     <!-- end header -->
     <!-- main -->
     <main class="main-catalog">
+      <!-- main header -->
+      <header class="main-catalog-header">
+        <h1>Гостиницы Седоны </h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Каталог</a>
+          </li>
+        </ul>
+        <section class="filter">
+          <h2 class="visually-hidden">Фильтры каталога</h2>
+          <form class="filter-product" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">
+                <h3>Инфраструктура:</h3>
+              </legend>
+              <ul class="filter-group-list">
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="parking" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="wifi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">
+                <h3>Тип жилья:</h3>
+              </legend>
+              <ul class="filter-group-list">
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="type of housing" value="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="type of housing" value="motel">
+                    Мотель
+                  </label>
+                </li>
+                <li class="filter-group-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="type of housing" value="apartments">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">
+                <h3>Стоимость, ₽:</h3>
+              </legend>
+              <ul class="filter-group-price-list">
+                <li class="filter-group-price-item">
+                  <label class="price-zone">
+                    <input class="price-zone-input" placeholder="0" type="text" name="min">
+                    от
+                  </label>
+                </li>
+                <li class="filter-group-price-item">
+                  <label class="price-zone">
+                    <input class="price-zone-input" placeholder="9000" type="text" name="max">
+                    до
+                  </label>
+                </li>
+              </ul>
+              <input class="price-range"  type="range" name="price-range" value="9000" min="0" max="12000" step="500">
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">
+                <h3 class="visually-hidden">Кнопки управления</h3>
+              </legend>
+              <ul class="filter-group-botton-list">
+                <li class="filter-group-botton-item">
+                  <input class="button apply" type="submit" name="apply" value="Применить">
+                </li>
+                <li class="filter-group-botton-item">
+                  <input class="button reset" type="reset" name="reset" value="Сбросить">
+                </li>
+              </ul>
+          </form>
+        </section>
+      </header>
+      <!-- end main header -->
       <!-- subscribe -->
       <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
