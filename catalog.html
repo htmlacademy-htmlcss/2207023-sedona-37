@@ -8,10 +8,10 @@
   <body class="page">
     <!-- header -->
     <header class="page-header" data-test="header">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип города Седона" src="images/logo-header.svg" width="140"  height="70">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип города Седона" src="images/logo-header.svg" width="140"  height="70">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -31,8 +31,8 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
-              <span class="count">12</span>
               <span class="visually-hidden">Избранное</span>
+              <span class="count">12</span>
             </a>
           </li>
           <li class="navigation-user-item">
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <span>Гостиницы</span>
           </li>
         </ul>
         <section class="filter" data-test="filter">
@@ -160,13 +160,13 @@
           </select>
           <ul class="sorting-list">
             <li class="sorting-item">
-              <button class="sorting-link active" type="button" aria-label="Показать карточки"></button>
+              <button class="sorting-link active" type="button" aria-label="Показать карточки" title="Карточки"></button>
             </li>
             <li class="sorting-item">
-              <button class="sorting-link" type="button" aria-label="Показать карточки c описанием"></button>
+              <button class="sorting-link" type="button" aria-label="Показать карточки c описанием" title="Карточки с описанием"></button>
             </li>
             <li class="sorting-item">
-              <button class="sorting-link" type="button" aria-label="Показать список"></button>
+              <button class="sorting-link" type="button" aria-label="Показать список" title="Список"></button>
             </li>
           </ul>
         </section>
@@ -239,22 +239,22 @@
           <h3 class="visually-hidden">Страницы каталога</h3>
           <ul class="catalog-pages-list">
             <li class="catalog-pages-item">
-              <a class="catalog-pages-link" href="#" area-label="Страница">1</a>
+              <a class="catalog-pages-link" href="#" area-label="Перейти на страницу 1">1</a>
             </li>
             <li class="catalog-pages-item">
-              <a class="catalog-pages-link" href="#" area-label="Страница">2</a>
+              <a class="catalog-pages-link" href="#" area-label="Перейти на страницу 2">2</a>
             </li>
             <li class="catalog-pages-item">
-              <a class="catalog-pages-link" href="#" area-label="Страница">3</a>
+              <a class="catalog-pages-link" href="#" area-label="Перейти на страницу 3">3</a>
             </li>
             <li class="catalog-pages-item">
-              <a class="catalog-pages-link" href="#" area-label="Страница">4</a>
+              <a class="catalog-pages-link" href="#" area-label="Перейти на страницу 4">4</a>
             </li>
             <li class="catalog-pages-item">
               <a class="catalog-pages-link" href="#" area-label="Показать больше страниц">...</a>
             </li>
             <li class="catalog-pages-item">
-              <a class="catalog-pages-link" href="#" area-label="Страница">10</a>
+              <a class="catalog-pages-link" href="#" area-label="Перейти на страницу 10">10</a>
             </li>
           </ul>
         </section>
