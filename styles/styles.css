@@ -26,22 +26,29 @@ body {
   margin: 0;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
-} */
-/* header */
-.page-header {
-  width: 1200px;
+  overflow: hidden;
+}
+
+.page-wraper {
+  max-width: 1200px;
   background-color: #ffffff;
   margin: 0 auto;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* header */
+.page-header {
+  width: 100%;
 }
 
 .navigation-link {
@@ -52,16 +59,8 @@ body {
   text-decoration: none;
 }
 
-.navigation-user-link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-/* .navigation-user-link.search {
+.search {
+  content: "";
   display: block;
   width: 20px;
   height: 20px;
@@ -69,31 +68,43 @@ body {
   background-repeat: no-repeat;
   background-size: 20px 20px;
 }
+.favorites {
+  text-decoration: none;
+}
 
-.navigation-user-link.favorites {
+.count {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.count::before {
+  content: "";
   display: block;
   width: 20px;
   height: 20px;
   background-image: url(../images/favorites-icon.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
-} */
+}
 
-/* .navigation-user-link.button {
-  display: block;
+.navigation-user-button {
+  /* display: block;
   width: 160px;
-  height: 36px;
+  height: 36px; */
   background-color: #756157;
   color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
   text-transform: uppercase;
-} */
+}
 
 /* main */
 .main-index {
-  width: 1200px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 /* hero */
@@ -157,7 +168,7 @@ body {
 }
 
 /* search hotel */
-.search h2 {
+.search-hotel h2 {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -165,17 +176,18 @@ body {
   color: #000000;
 }
 
-.search .description {
+.search-hotel .description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
-.search-link {
+.search-hotel-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  color: #000000;
+  color: #ffffff;
+  background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -219,14 +231,16 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  color:#ffffff;
+  background-color: #82B3D3;
 }
 
 /* footer */
 .page-footer {
-  width: 1200px;
-  background-color: #ffffff;
+  width: 100%;
+  /* background-color: #ffffff;
   margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
 }
 
 .page-footer address {
@@ -242,10 +256,10 @@ body {
 
 /* main catalog */
 .main-catalog {
-  width: 1200px;
-  background-color: #ffffff;
+  width: 100%;
+  /* background-color: #ffffff;
   margin: 0 auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
 }
 
 .main-catalog-header {
@@ -297,20 +311,24 @@ body {
   color: #000000;
 }
 
-.apply {
+.apply-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
-.reset {
+.reset-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
 }
 
 /* sorting */
@@ -352,21 +370,28 @@ body {
   text-decoration: none;
 }
 
-.card-more {
+.card-more-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #ffffff;
+  background-color: #756157;
 }
 
-.favorites {
+.favorites-button {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.favorites-button.added {
+  background-color: #7DB54F;
 }
 
 .rate {
