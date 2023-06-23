@@ -289,6 +289,7 @@ body {
   background-image: url(../images/subscribe-bg.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #3F5E72;
 }
 
 .subscribe h2 {
@@ -307,6 +308,11 @@ body {
   text-align: center;
   width: 475px;
   margin: 0 auto;
+}
+
+.subscribe.main h2,
+.subscribe.main .description {
+  color: #ffffff;
 }
 
 .newsletter-form {
@@ -372,6 +378,7 @@ body {
 /* main catalog */
 .main-catalog {
   width: 100%;
+  flex-grow: 1;
 }
 
 .main-catalog-header {
