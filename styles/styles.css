@@ -95,6 +95,7 @@ body {
   align-items: center;
   min-width: 339px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
 
   list-style: none;
@@ -125,8 +126,9 @@ body {
 .navigation-user-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
-  min-width: 268px;
+  min-width: 88px;
   margin: 0;
   padding: 0;
 
@@ -188,12 +190,22 @@ body {
   border-radius: 1000px;
 }
 
+.navigation-button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5px;
+  margin-left: 20px;
+}
+
 .navigation-user-button {
   display: block;
   box-sizing: border-box;
   min-width: 160px;
   min-height: 36px;
-  margin-left: 20px;
+  margin-bottom: 5px;
   padding: 8px 34px;
 
   font-weight: 700;
@@ -223,6 +235,15 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: cover;
+
+  -webkit-mask-image: linear-gradient(#000000, #000000), url(../images/hero-bg-mask.svg);
+          mask-image: linear-gradient(#000000, #000000), url(../images/hero-bg-mask.svg);
+  -webkit-mask-position: top, bottom;
+          mask-position: top, bottom;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 100% calc(100% - 57px), 100% 58px;
+          mask-size: 100% calc(100% - 57px), 100% 58px;
 }
 
 .welcome {
@@ -289,20 +310,19 @@ body {
   list-style: none;
 }
 
-.advantages-item:not(:first-of-type, :last-of-type),
+.advantages-item:not(.wide),
 .advantages-item .wrapper {
   box-sizing: border-box;
   width: 400px;
   padding: 102px 85px;
 }
 
-.advantages-item:first-of-type,
-.advantages-item:last-of-type {
+.advantages-item.wide {
   display: flex;
   width: 1200px;
 }
 
-.advantages-item:last-of-type {
+.advantages-item.wide:last-of-type {
   flex-direction: row-reverse;
 }
 
@@ -534,6 +554,7 @@ body {
   background-color: #82b3d3;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 /* footer */
@@ -577,6 +598,12 @@ body {
 }
 
 .page-footer address {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -10px;
+
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -584,6 +611,7 @@ body {
 
 .phone {
   display: inline-block;
+  margin-bottom: 10px;
 
   color: #000000;
   text-decoration: none;
@@ -823,6 +851,7 @@ body {
   background-color: #82b3d3;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .reset-button {
@@ -839,6 +868,7 @@ body {
   background-color: transparent;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* sorting */
@@ -886,12 +916,18 @@ body {
 
 .sorting-list {
   display: flex;
-  justify-content: space-between;
-  width: 160px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 168px;
   margin: 0;
+  margin-left: -8px;
   padding: 0;
 
   list-style: none;
+}
+
+.sorting-item {
+  margin-left: 8px;
 }
 
 .sorting-btn {
@@ -902,6 +938,7 @@ body {
   background-position: center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .sorting-btn.card-mode {
@@ -1027,6 +1064,7 @@ body {
   background-color: #82b3d3;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .favorites-button.added {
