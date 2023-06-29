@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона. Гостиницы</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
@@ -37,10 +38,10 @@
                 <span class="count">12</span>
               </a>
             </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-button open-popup" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+          <div class="navigation-button">
+            <a class="navigation-user-button open-popup" href="#">Хочу сюда!</a>
+          </div>
         </nav>
       </header>
       <!-- end header -->
@@ -52,7 +53,7 @@
             <h1>Гостиницы Седоны </h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link back-to-home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -193,12 +194,18 @@
                 <a class="card-img" href="#">
                   <img alt="Amara Resort & Spa" src="images/catalog/amara-resort-spa.jpg" width="300" height="212">
                 </a>
-                <span>Гостиница</span>
-                <span>От 4000 ₽</span>
-                <a class="card-more-button" href="#">Подробнее</a>
-                <button class="favorites-button">В избранное</button>
-                <p class="visually-hidden">4 звезды</p>
-                <p class="rate">Рейтинг: <span class="rate-result">8,5</span></p>
+                  <div class="card-wrapper-type">
+                  <span>Гостиница</span>
+                  <span>От 4000 ₽</span>
+                </div>
+                <div class="card-wrapper-button">
+                  <a class="card-more-button" href="#">Подробнее</a>
+                  <button class="favorites-button">В избранное</button>
+                </div>
+                <div class="card-wrapper-rating four-star">
+                  <p class="visually-hidden">4 звезды</p>
+                  <p class="rate">Рейтинг: <span class="rate-result">8,5</span></p>
+                </div>
               </li>
               <li class="product-card-item">
                 <a class="card-title" href="#">
@@ -207,12 +214,18 @@
                 <a class="card-img" href="#">
                   <img alt="Villas at Poco Diablo" src="images/catalog/villas-at-poco-diablo.jpg" width="300" height="212">
                 </a>
-                <span>Гостиница</span>
-                <span>От 5000 ₽</span>
-                <a class="card-more-button" href="#">Подробнее</a>
-                <button class="favorites-button added">В избранном</button>
-                <p class="visually-hidden">4 звезды</p>
-                <p class="rate">Рейтинг: <span class="rate-result">9,2</span></p>
+                <div class="card-wrapper-type">
+                  <span>Гостиница</span>
+                  <span>От 5000 ₽</span>
+                </div>
+                <div class="card-wrapper-button">
+                  <a class="card-more-button" href="#">Подробнее</a>
+                  <button class="favorites-button added">В избранном</button>
+                </div>
+                <div class="card-wrapper-rating four-star">
+                  <p class="visually-hidden">4 звезды</p>
+                  <p class="rate">Рейтинг: <span class="rate-result">9,2</span></p>
+                </div>
               </li>
               <li class="product-card-item">
                 <a class="card-title" href="#">
@@ -221,12 +234,18 @@
                 <a class="card-img" href="#">
                   <img alt="Desert Quail Inn" src="images/catalog/desert-quail-inn.jpg" width="300" height="212">
                 </a>
-                <span>Гостиница</span>
-                <span>От 2500 ₽</span>
-                <a class="card-more-button" href="#">Подробнее</a>
-                <button class="favorites-button">В избранное</button>
-                <p class="visually-hidden">3 звезды</p>
-                <p class="rate">Рейтинг: <span class="rate-result">6,9</span></p>
+                <div class="card-wrapper-type">
+                  <span>Гостиница</span>
+                  <span>От 2500 ₽</span>
+                </div>
+                  <div class="card-wrapper-button">
+                  <a class="card-more-button" href="#">Подробнее</a>
+                  <button class="favorites-button">В избранное</button>
+                </div>
+                <div class="card-wrapper-rating three-star">
+                  <p class="visually-hidden">3 звезды</p>
+                  <p class="rate">Рейтинг: <span class="rate-result">6,9</span></p>
+                </div>
               </li>
               <li class="product-card-item">
                 <a class="card-title" href="#">
@@ -235,12 +254,18 @@
                 <a class="card-img" href="#">
                   <img alt="GreenTree Inn" src="images/catalog/greentree-inn.jpg" width="300" height="212">
                 </a>
-                <span>Гостиница</span>
-                <span>От 1500 ₽</span>
-                <a class="card-more-button" href="#">Подробнее</a>
-                <button class="favorites-button">В избранное</button>
-                <p class="visually-hidden">2 звезды</p>
-                <p class="rate">Рейтинг: <span class="rate-result">5,0</span></p>
+                <div class="card-wrapper-type">
+                  <span>Гостиница</span>
+                  <span>От 1500 ₽</span>
+                </div>
+                <div class="card-wrapper-button">
+                  <a class="card-more-button" href="#">Подробнее</a>
+                  <button class="favorites-button">В избранное</button>
+                </div>
+                  <div class="card-wrapper-rating two-star">
+                  <p class="visually-hidden">2 звезды</p>
+                  <p class="rate">Рейтинг: <span class="rate-result">5,0</span></p>
+                </div>
               </li>
             </ul>
           </section>
