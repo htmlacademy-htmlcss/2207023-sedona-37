@@ -393,7 +393,7 @@ body {
 }
 
 .part-2 .advantages-item:nth-child(2n) {
-  background-color: #ffffff;
+  background-color: inherit;
 }
 
 .part-2 h3 {
@@ -524,7 +524,7 @@ body {
   box-sizing: border-box;
   min-width: 452px;
   min-height: 52px;
-  padding-left: 20px;
+  padding: 0 20px;
 
   font-size: 18px;
   line-height: 24px;
@@ -911,6 +911,8 @@ body {
   font-family: inherit;
   color: #333333;
 
+  background-color: inherit;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -920,13 +922,14 @@ body {
   justify-content: flex-start;
   width: 168px;
   margin: 0;
+  margin-bottom: -8px;
   margin-left: -8px;
-  padding: 0;
 
   list-style: none;
 }
 
 .sorting-item {
+  margin-bottom: 8px;
   margin-left: 8px;
 }
 
@@ -983,7 +986,7 @@ body {
   display: grid;
   box-sizing: border-box;
   width: 340px;
-  padding: 20px;
+  padding: 19px;
 
   border: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -994,6 +997,9 @@ body {
 }
 
 .card-title {
+  width: fit-content;
+  height: fit-content;
+
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -1003,6 +1009,7 @@ body {
 }
 
 .card-title h4 {
+  width: fit-content;
   margin: 0;
 }
 
