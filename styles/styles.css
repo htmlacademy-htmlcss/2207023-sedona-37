@@ -71,15 +71,15 @@ body {
   padding: 8px 18px;
 
   font-weight: 700;
+  font-family: inherit;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  text-align: center;
 
+  border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* header */
@@ -233,11 +233,13 @@ body {
 }
 
 .header-button {
-  background-color: #756157;
+  min-width: 160px;
+  margin-bottom: 5px;
+
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 5px;
-  min-width: 160px;
+
+  background-color: #756157;
 }
 
 .header-button:hover {
@@ -286,8 +288,8 @@ body {
 
 /* advantages */
 .advantages .lead {
-  padding: 69px 70px;
   margin-bottom: 21px;
+  padding: 69px 70px;
 }
 
 .lead-title {
@@ -325,13 +327,13 @@ body {
 
 .advantages-item:not(.wide),
 .advantages-item .wrapper {
-  box-sizing: border-box;
-  width: 400px;
-  padding: 102px 85px;
-  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  padding: 102px 85px;
 }
 
 .advantages-item.wide {
@@ -449,14 +451,13 @@ body {
 .service-item-title {
   max-width: 175px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-
-  margin-bottom: 30px;
 }
 
 .service-item-title::before {
@@ -516,12 +517,14 @@ body {
 }
 
 .search-hotel-button {
-  background-color: #756157;
-  font-size: 20px;
-  line-height: 36px;
   max-width: max-content;
   margin: 0 auto;
   padding: 8px 50px;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  background-color: #756157;
 }
 
 .search-hotel-button:hover {
@@ -607,27 +610,29 @@ body {
 }
 
 .newsletter-button {
-  background-color: #82b3d3;
+  padding: 8px 50px;
+
   font-size: 20px;
   line-height: 36px;
+
+  background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
-  padding: 8px 50px;
 }
 
 .newsletter-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .newsletter-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .newsletter-button:active {
- color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .newsletter-button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   cursor: not-allowed;
 }
 
@@ -643,8 +648,8 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1060px;
-  margin: 0 auto;
   min-height: 50px;
+  margin: 0 auto;
 }
 
 .social-list {
@@ -667,16 +672,16 @@ body {
 
 .social-icon {
   display: block;
-  margin: auto;
   height: 40px;
+  margin: auto;
 }
 
 .social-icon:hover path {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .social-icon:focus path {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .social-icon:active path {
@@ -949,16 +954,55 @@ body {
 
 .apply-button {
   width: 100%;
-  background-color: #82b3d3;
+
   font-size: 16px;
   line-height: 20px;
+
+  background-color: #82b3d3;
+}
+
+.apply-button:hover {
+  background-color: #68a2ca;
+}
+
+.apply-button:focus {
+  background-color: #68a2ca;
+}
+
+.apply-button:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.apply-button:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
 }
 
 .reset-button {
   width: 100%;
-  background-color: transparent;
+
   font-size: 16px;
   line-height: 20px;
+
+  background-color: transparent;
+}
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.reset-button:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.reset-button:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
 }
 
 /* sorting */
@@ -1056,6 +1100,19 @@ body {
   border-color: #000000;
 }
 
+.sorting-btn:hover {
+  border-color: #000000;
+}
+
+.sorting-btn:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.sorting-btn:active {
+  border-color: #000000;
+}
+
 /* catalog card */
 .product-card-list {
   display: grid;
@@ -1123,19 +1180,67 @@ body {
 }
 
 .card-more-button {
-  background-color: #756157;
   font-size: 16px;
   line-height: 20px;
+
+  background-color: #756157;
+}
+
+.card-more-button:hover {
+  background-color: #615048;
+}
+
+.card-more-button:focus {
+  background-color: #615048;
+}
+
+.card-more-button:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .favorites-button {
   font-size: 16px;
   line-height: 20px;
+
   background-color: #82b3d3;
+}
+
+.favorites-button:hover {
+  background-color: #68a2ca;
+}
+
+.favorites-button:focus {
+  background-color: #68a2ca;
+}
+
+.favorites-button:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.favorites-button:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
 }
 
 .favorites-button.added {
   background-color: #7db54f;
+}
+
+.favorites-button.added:hover {
+  background-color: #6c9e42;
+}
+
+.favorites-button.added:focus {
+  background-color: #6c9e42;
+}
+
+.favorites-button.added:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.favorites-button.added:disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
 }
 
 .rate {
@@ -1189,17 +1294,6 @@ body {
   list-style: none;
 }
 
-.catalog-pages-item {
-  width: 60px;
-
-  background-color: #82b3d3;
-  border-radius: 4px;
-}
-
-.catalog-pages-item.active {
-  background-color: #f2f2f2;
-}
-
 .catalog-pages-item:not(:last-of-type) {
   margin-right: 8px;
 }
@@ -1207,6 +1301,7 @@ body {
 .catalog-pages-link {
   display: block;
   box-sizing: border-box;
+  width: 60px;
   height: 60px;
   padding: 12px 0;
 
@@ -1216,8 +1311,29 @@ body {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+
+  background-color: #82b3d3;
+  border-radius: 4px;
 }
 
-.catalog-pages-item.active .catalog-pages-link {
+.catalog-pages-link.active {
   color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+.catalog-pages-link:not(.active):hover {
+  background-color: #68a2ca;
+  outline: 1px solid #82b3d3;
+  outline-offset: -1px;
+}
+
+.catalog-pages-link:not(.active):focus {
+  background-color: #68a2ca;
+  outline: 1px solid #82b3d3;
+  outline-offset: -1px;
+}
+
+.catalog-pages-link:not(.active):active {
+  color: rgba(255, 255, 255, 0.30);
 }
