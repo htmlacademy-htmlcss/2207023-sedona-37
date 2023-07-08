@@ -830,7 +830,7 @@ body {
 }
 
 .filter-group {
-  max-width: 150px;
+  min-width: 150px;
   margin: 0;
   padding: 0;
 
@@ -839,12 +839,11 @@ body {
 
 .filter-left-group {
   display: flex;
-  justify-content: space-between;
   width: 370px;
 }
 
-.filter-left-group .filter-group {
-  max-width: 150px;
+.filter-left-group .filter-group:first-child {
+  margin-right: 70px;
 }
 
 
@@ -852,6 +851,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 549px;
+}
+
+.filter-group-title {
+  padding: 0;
 }
 
 .filter-group-title h3 {
@@ -878,6 +881,65 @@ body {
 .control {
   line-height: 23px;
   color: #ffffff;
+  position: relative;
+  padding-left: 36px;
+}
+
+.checkbox-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 1.5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: block;
+}
+
+.control-input[type="checkbox"]:checked + .checkbox-mark {
+  background-image: url(../images/checked-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:focus .checkbox-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active,
+.control:active .checkbox-mark {
+  opacity: 0.3;
+}
+
+.radio-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 1.5px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .radio-mark {
+  background-image: url(../images/radio-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control:focus .radio-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .radio-mark {
+  opacity: 0.3;
 }
 
 .filter-group-price-list {
@@ -885,7 +947,7 @@ body {
   justify-content: space-between;
   width: 288px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
@@ -922,7 +984,12 @@ body {
 }
 
 .price-zone-input {
+  background-color: transparent;
   padding-left: 20px;
+}
+
+.price-zone-input:focus {
+  outline: none;
 }
 
 .filter-group-price-item:first-child .price-zone,
@@ -935,8 +1002,47 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.price-range {
+.price-zone:hover {
+  background-color: #E6E6E6;
+}
+
+.price-zone:focus-within {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
   width: 100%;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
 }
 
 .filter-group-button-list {
@@ -1039,6 +1145,7 @@ body {
   width: 292px;
   height: 49px;
   padding-left: 18px;
+  padding-right: 32px;
 
   font-size: 18px;
   line-height: 21px;
@@ -1048,6 +1155,26 @@ body {
   background-color: inherit;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-image: url(../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.select-control:disabled {
+  border-color: #000000;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .sorting-list {
@@ -1155,6 +1282,10 @@ body {
   text-decoration: none;
 
   grid-column: 1 / -1;
+}
+
+.card-title:hover {
+  opacity: 0.5;
 }
 
 .card-title h4 {
@@ -1301,9 +1432,9 @@ body {
 .catalog-pages-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
-  padding: 12px 0;
+  padding: 12px;
 
   font-weight: 700;
   font-size: 20px;
@@ -1322,18 +1453,23 @@ body {
   background-color: #f2f2f2;
 }
 
-.catalog-pages-link:not(.active):hover {
+.catalog-pages-link:not(.active, .more-pages):hover {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
   outline-offset: -1px;
 }
 
-.catalog-pages-link:not(.active):focus {
+.catalog-pages-link:not(.active, .more-pages):focus {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
   outline-offset: -1px;
 }
 
-.catalog-pages-link:not(.active):active {
+.catalog-pages-link:not(.active, .more-pages):active {
   color: rgba(255, 255, 255, 0.30);
+}
+
+.more-pages {
+  background-color: #ffffff;
+  color: #000000;
 }
