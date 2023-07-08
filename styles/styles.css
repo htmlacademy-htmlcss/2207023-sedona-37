@@ -248,6 +248,7 @@ body {
 
 .header-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .header-button:active {
@@ -524,6 +525,7 @@ body {
 
 .search-hotel-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .search-hotel-button:active {
@@ -616,6 +618,7 @@ body {
 
 .newsletter-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .newsletter-button:active {
@@ -673,6 +676,7 @@ body {
 
 .social-icon:focus path {
   fill: #68a2ca;
+  outline: none;
 }
 
 .social-icon:active path {
@@ -705,6 +709,7 @@ body {
 
 .phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .phone:active {
@@ -721,6 +726,7 @@ body {
 
 .academy-logo:focus path {
   fill: #756157;
+  outline: none;
 }
 
 .academy-logo:active path {
@@ -961,7 +967,7 @@ body {
   font-family: inherit;
   color: rgba(0, 0, 0, 0.3);
 
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 .price-zone-input,
@@ -984,6 +990,13 @@ body {
   padding-left: 20px;
 
   background-color: transparent;
+  -moz-appearance: textfield;
+}
+
+.price-zone-input::-webkit-outer-spin-button,
+.price-zone-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .price-zone-input:focus {
@@ -1077,6 +1090,7 @@ body {
 
 .apply-button:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .apply-button:active {
