@@ -183,5 +183,74 @@
       </footer>
       <!-- end footer -->
     </div>
+    <section class="popup" data-test="modal">
+      <div class="popup-content">
+        <button class="popup-button close-popup" title="Закрыть окно">
+          <span class="visually-hidden">Закрыть окно</span>
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="26" r="26" fill="#F2F2F2"/>
+            <path d="m33.49 20.78-1.3-1.29-5.7 5.7-5.7-5.7-1.3 1.3 5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z" fill="#000"/>
+          </svg>
+        </button>
+        <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
+        <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="date-check-in">
+            <h3 class="input-title">Дата Заезда:</h3>
+            <input class="check-in-input" placeholder="Укажите дату" type="text" value="27 апреля 2020" name="date-check-in" required>
+            <span class="notification error">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="date-check-out">
+            <h3 class="input-title">Дата Выезда:</h3>
+            <input class="check-out-input" placeholder="Укажите дату" type="text" value="1 сентября 2023" name="date-check-out" required>
+            <span class="notification">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div class="counter-wrapper">
+            <label class="popup-counter" for="count-adult">
+              <h3 class="input-title">Взрослые:</h3>
+            </label>
+            <div class="counter-content">
+              <button class="count-button minus" type="button">
+                <span class="visually-hidden">Уменьшить количество человек</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" fill="#000"/>
+                </svg>
+              </button>
+              <input class="count-input adult" placeholder="1" type="number" value="2" name="count-adult" id="count-adult" required>
+              <button class="count-button plus" type="button">
+                <span class="visually-hidden">Увеличить количество человек</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
+                </svg>
+              </button>
+            </div>
+            <label class="popup-counter child"  for="count-child">
+              <h3 class="input-title">Дети:</h3>
+            </label>
+            <div class="tooltip-wrapper">
+              <button class="tooltip"  type="button"><span class="visually-hidden">информация по размещению детей</span></button>
+                <p class="tooltip-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </p>
+            </div>
+            <div class="counter-content">
+              <button class="count-button minus" type="button">
+                <span class="visually-hidden">Уменьшить количество человек</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9v2h14V9H3Z" fill="#000"/>
+                </svg>
+              </button>
+              <input class="count-input child" placeholder="0" type="number" value="2" name="count-child" id="count-child" required>
+              <button class="count-button plus" type="button">
+                <span class="visually-hidden">Увеличить количество человек</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#000"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button class="button popup-search-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
