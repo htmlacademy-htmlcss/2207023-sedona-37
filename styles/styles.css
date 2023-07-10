@@ -49,7 +49,8 @@ body {
   border: 0;
 
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .page-wraper {
@@ -96,6 +97,7 @@ body {
   display: block;
   height: 64px;
   margin-right: 28px;
+
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -105,6 +107,7 @@ body {
 
 .navigation-logo:hover {
   transform: scale(1.2);
+
   transition: transform 0.2s ease-in-out;
 }
 
@@ -113,15 +116,17 @@ body {
 }
 
 .navigation-logo:focus-visible {
-  outline: 3px solid #81B3D3;
-  outline-offset: 6px;
   border-radius: 0 0 6px 6px;
+  outline: 3px solid #81b3d3;
+  outline-offset: 6px;
 }
 
 .navigation-logo:active {
-  offset: none;
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
+
+  offset: none;
 }
 
 .navigation {
@@ -154,37 +159,45 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 
+  transition: color 0.2s ease-in-out;
 }
 
 .navigation-link:hover {
   color: rgba(0, 0, 0, 0.5);
+
   transition: color 0.2s ease-in-out;
 }
 
 .navigation-link:focus {
   color: rgba(0, 0, 0, 0.5);
-  offset: none;
+
   transition: color 0.2s ease-in-out;
+
+  offset: none;
 }
 
 .navigation-link:focus-visible {
   color: rgba(0, 0, 0, 0.5);
-  outline: 2px solid #756257;
+
   border-radius: 0 0 6px 6px;
+  outline: 2px solid #756257;
+
   transition: color 0.2s ease-in-out;
 }
 
 .navigation-link:active {
   color: #756257;
+
   transition: color 0.2s ease-in-out;
 }
 
 .active-page {
-  text-decoration: 2px underline;
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
 
-  text-decoration-color: #756257;
+  -webkit-text-decoration-color: #756257;
+          text-decoration-color: #756257;
   text-underline-offset: 19px;
   text-underline-position: under;
 }
@@ -209,6 +222,7 @@ body {
 .search {
   display: block;
   padding: 22px 12px;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -222,12 +236,14 @@ body {
   background-image: url(../images/search-icon.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .search:hover::before,
 .favorites:hover::before {
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -238,19 +254,21 @@ body {
 
 .search:focus-visible,
 .favorites:focus-visible {
-  outline: 2px solid #756257;
   border-radius: 0 0 6px 6px;
+  outline: 2px solid #756257;
 }
 
 .search:focus-visible::before,
 .favorites:focus-visible::before {
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .search:active::before,
 .favorites:active::before {
   opacity: 0.3;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -259,6 +277,7 @@ body {
   padding: 22px 12px;
 
   text-decoration: none;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -272,6 +291,7 @@ body {
   background-image: url(../images/favorites-icon.svg);
   background-repeat: no-repeat;
   background-size: 20px 20px;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -312,17 +332,20 @@ body {
   line-height: 20px;
 
   background-color: #756157;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .header-button:hover {
   background-color: #615048;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .header-button:focus {
   background-color: #615048;
   outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -333,6 +356,7 @@ body {
 
 .header-button:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -599,17 +623,20 @@ body {
   line-height: 36px;
 
   background-color: #756157;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .search-hotel-button:hover {
   background-color: #615048;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .search-hotel-button:focus {
   background-color: #615048;
   outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -620,6 +647,7 @@ body {
 
 .search-hotel-button:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -685,17 +713,20 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px 0 0 4px;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .field:hover {
   background-color: #e6e6e6;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .field:focus {
   background-color: #e6e6e6;
   outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -706,12 +737,13 @@ body {
 
 .field:active {
   background-color: #f2f2f2;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .field:disabled {
-  outline: none;
   background-color: #e5e5e5;
+  outline: none;
   cursor: not-allowed;
 }
 
@@ -733,20 +765,21 @@ body {
 
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .newsletter-button:hover {
   background-color: #68a2ca;
-  transition: background-color 0.2s ease-in-out;
 
+  transition: background-color 0.2s ease-in-out;
 }
 
 .newsletter-button:focus {
   background-color: #68a2ca;
   outline: none;
-  transition: background-color 0.2s ease-in-out;
 
+  transition: background-color 0.2s ease-in-out;
 }
 
 .newsletter-button:focus-visible {
@@ -756,8 +789,8 @@ body {
 
 .newsletter-button:active {
   color: rgba(255, 255, 255, 0.30);
-  transition: color 0.2s ease-in-out;
 
+  transition: color 0.2s ease-in-out;
 }
 
 .newsletter-button:disabled {
@@ -810,26 +843,29 @@ body {
 }
 
 .social-link:hover path {
-  fill: #68a2ca;
   transition: fill 0.2s ease-in-out;
+
+  fill: #68a2ca;
 }
 
 .social-link:focus path {
   outline: none;
 
-  fill: #68a2ca;
   transition: fill 0.2s ease-in-out;
+
+  fill: #68a2ca;
 }
 
 .social-link:focus-visible {
+  border-radius: 4px;
   outline: 2px solid #68a2ca;
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 .social-link:active path {
-  fill: rgba(104, 162, 202, 0.3);
   transition: fill 0.2s ease-in-out;
+
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .page-footer address {
@@ -850,28 +886,33 @@ body {
 
   color: #000000;
   text-decoration: none;
+
   transition: color 0.2s ease-in-out;
 }
 
 .phone:hover {
   color: #756157;
+
   transition: color 0.2s ease-in-out;
 }
 
 .phone:focus {
   color: #756157;
-  transition: color 0.2s ease-in-out;
+
   outline: none;
+
+  transition: color 0.2s ease-in-out;
 }
 
 .phone:focus-visible {
+  border-radius: 4px;
   outline: 2px solid #756157;
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 .phone:active {
   color: rgba(117, 97, 87, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -884,26 +925,29 @@ body {
 }
 
 .academy-link:hover path {
-  fill: #756157;
   transition: fill 0.2s ease-in-out;
+
+  fill: #756157;
 }
 
 .academy-link:focus path {
   outline: none;
 
-  fill: #756157;
   transition: fill 0.2s ease-in-out;
+
+  fill: #756157;
 }
 
 .academy-link:focus-visible {
+  border-radius: 4px;
   outline: 2px solid #756157;
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 .academy-link:active path {
-  fill: rgba(117, 97, 87, 0.3);
   transition: fill 0.2s ease-in-out;
+
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* main catalog */
@@ -990,24 +1034,27 @@ body {
 
 .breadcrumbs-link:hover {
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .breadcrumbs-link:focus {
-  opacity: 0.6;
   outline: none;
+  opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .breadcrumbs-link:focus-visible {
-  opacity: 1;
+  border-radius: 4px;
   outline: 2px solid #68a2ca;
   outline-offset: 2px;
-  border-radius: 4px;
+  opacity: 1;
 }
 
 .breadcrumbs-link:active {
   opacity: 0.3;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1078,6 +1125,7 @@ body {
 
   line-height: 23px;
   color: #ffffff;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1103,6 +1151,7 @@ body {
 
 .control:hover {
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1114,6 +1163,7 @@ body {
 .control-input:active + .checkbox-mark {
   outline: none;
   opacity: 0.3;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1143,6 +1193,7 @@ body {
 
 .control-input:active + .radio-mark {
   opacity: 0.3;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1169,6 +1220,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #f2f2f2;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1200,7 +1252,8 @@ body {
 .price-zone-input::-webkit-inner-spin-button {
   margin: 0;
 
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .filter-group-price-item:first-child .price-zone,
@@ -1215,6 +1268,7 @@ body {
 
 .price-zone:hover {
   background-color: #e6e6e6;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1225,6 +1279,7 @@ body {
 .price-zone:focus-within {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1256,21 +1311,25 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .range-toggle:hover {
   background-color: #e5e5e5;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .range-toggle:focus {
   outline: 3px solid #83b3d3;
+
   transition: outline-width 0.2s ease-in-out;
 }
 
 .range-toggle:active {
   outline: 2px solid #83b3d3;
+
   transition: outline-width 0.2s ease-in-out;
 }
 
@@ -1304,17 +1363,20 @@ body {
   line-height: 20px;
 
   background-color: #82b3d3;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .apply-button:hover {
   background-color: #68a2ca;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .apply-button:focus {
   background-color: #68a2ca;
   outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1325,6 +1387,7 @@ body {
 
 .apply-button:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -1410,18 +1473,22 @@ body {
   border-radius: 4px;
   cursor: pointer;
 
-  appearance: none;
   transition: border-color 0.2s ease-in-out;
+
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
   border-color: #68a2ca;
+
   transition: border-color 0.2s ease-in-out;
 }
 
 .select-control:focus {
   border-color: #68a2ca;
   outline: none;
+
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -1458,6 +1525,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
+
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -1485,17 +1553,20 @@ body {
 
 .sorting-btn:hover {
   border-color: #000000;
+
   transition: border-color 0.2s ease-in-out;
 }
 
 .sorting-btn:focus {
   border-color: #68a2ca;
   outline: none;
+
   transition: border-color 0.2s ease-in-out;
 }
 
 .sorting-btn:active {
   border-color: #000000;
+
   transition: border-color 0.2s ease-in-out;
 }
 
@@ -1540,30 +1611,34 @@ body {
   color: #000000;
   text-decoration: none;
 
-  grid-column: 1 / -1;
   transition: opacity 0.2s ease-in-out;
+
+  grid-column: 1 / -1;
 }
 
 .card-title:hover {
   opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .card-title:focus {
-  opacity: 0.6;
   outline: none;
+  opacity: 0.6;
+
   transition: opacity 0.2s ease-in-out;
 }
 
 .card-title:focus-visible {
-  opacity: 1;
+  border-radius: 4px;
   outline: 2px solid #756157;
   outline-offset: 2px;
-  border-radius: 4px;
+  opacity: 1;
 }
 
 .card-title:active {
   opacity: 0.3;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -1594,17 +1669,20 @@ body {
   line-height: 20px;
 
   background-color: #756157;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .card-more-button:hover {
   background-color: #615048;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .card-more-button:focus {
-  outline: none;
   background-color: #615048;
+  outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1615,6 +1693,7 @@ body {
 
 .card-more-button:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -1623,17 +1702,20 @@ body {
   line-height: 20px;
 
   background-color: #82b3d3;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .favorites-button:hover {
   background-color: #68a2ca;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .favorites-button:focus {
-  outline: none;
   background-color: #68a2ca;
+  outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1644,6 +1726,7 @@ body {
 
 .favorites-button:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -1654,17 +1737,20 @@ body {
 
 .favorites-button.added {
   background-color: #7db54f;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .favorites-button.added:hover {
   background-color: #6c9e42;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .favorites-button.added:focus {
-  outline: none;
   background-color: #6c9e42;
+  outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1676,6 +1762,7 @@ body {
 
 .favorites-button.added:active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -1755,6 +1842,7 @@ body {
 
   background-color: #82b3d3;
   border-radius: 4px;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -1768,6 +1856,7 @@ body {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
   outline-offset: -1px;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1775,6 +1864,7 @@ body {
   background-color: #68a2ca;
   outline: 1px solid #82b3d3;
   outline-offset: -1px;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1785,6 +1875,7 @@ body {
 
 .catalog-pages-link:not(.active, .more-pages):active {
   color: rgba(255, 255, 255, 0.30);
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -1850,20 +1941,23 @@ body {
 }
 
 .popup-button:hover circle {
-  fill: #e6e6e6;
   transition: fill 0.2s ease-in-out;
+
+  fill: #e6e6e6;
 }
 
 .popup-button:focus,
 .popup-button:focus circle {
   outline: 3px solid #83b3d3;
 
-  fill: #e6e6e6;
   transition: fill 0.2s ease-in-out;
+
+  fill: #e6e6e6;
 }
 
 .popup-button:active path {
   opacity: 0.3;
+
   transition: fill 0.2s ease-in-out;
 }
 
@@ -1922,14 +2016,16 @@ body {
   border: none;
   border-radius: 4px;
 
-  appearance: none;
-
   transition: background-color 0.2s ease-in-out;
+
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .check-in-input:hover,
 .check-out-input:hover {
   background-color: #e6e6e6;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1937,6 +2033,7 @@ body {
 .check-out-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -1994,20 +2091,23 @@ body {
 }
 
 .count-button path {
-  fill: rgba(117, 97, 87, 0.30);
   transition: fill 0.2s ease-in-out;
+
+  fill: rgba(117, 97, 87, 0.30);
 }
 
 .count-button:hover path {
-  fill: #000000;
   transition: fill 0.2s ease-in-out;
 
+  fill: #000000;
 }
 
 .count-button:focus path {
   outline: none;
-  fill: #000000;
+
   transition: fill 0.2s ease-in-out;
+
+  fill: #000000;
 }
 
 .count-button:focus-visible {
@@ -2016,8 +2116,9 @@ body {
 }
 
 .count-button:active path {
-  fill: rgba(0, 0, 0, 0.2);
   transition: fill 0.2s ease-in-out;
+
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .minus {
@@ -2052,7 +2153,7 @@ body {
   margin: 0;
 
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 
 .count-input:hover {
@@ -2090,7 +2191,6 @@ body {
   position: absolute;
   left: 13px;
 
-  visibility: hidden;
   display: block;
   box-sizing: border-box;
   width: 256px;
@@ -2107,7 +2207,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   transform: translateX(-50%);
+  visibility: hidden;
   opacity: 0;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -2128,6 +2230,7 @@ body {
 .tooltip-text:hover {
   visibility: visible;
   opacity: 1;
+
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -2145,17 +2248,20 @@ body {
 
   background: #83b3d3;
   border-radius: 10px;
+
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .popup-search-button:hover {
   background-color: #68a2ca;
+
   transition: background-color 0.2s ease-in-out;
 }
 
 .popup-search-button:focus {
   background-color: #68a2ca;
   outline: none;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -2169,5 +2275,6 @@ body {
 
   background-color: #68a2ca;
   outline: none;
+
   transition: color 0.2s ease-in-out;
 }
