@@ -114,7 +114,7 @@ body {
 }
 
 .navigation-logo:focus {
-  offset: none;
+  outline: none;
 }
 
 .navigation-logo:focus-visible {
@@ -124,11 +124,10 @@ body {
 }
 
 .navigation-logo:active {
+  outline: none;
   opacity: 0.6;
 
   transition: opacity 0.2s ease-in-out;
-
-  offset: none;
 }
 
 .navigation {
@@ -174,9 +173,9 @@ body {
 .navigation-link:focus {
   color: rgba(0, 0, 0, 0.5);
 
-  transition: color 0.2s ease-in-out;
+  outline: none;
 
-  offset: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .navigation-link:focus-visible {
@@ -2081,7 +2080,8 @@ body {
   display: flex;
   max-width: 91px;
   height: 48px;
-  margin-right: 46px;
+  margin: 0;
+  margin-right: auto;
 }
 
 .popup-counter .input-title {

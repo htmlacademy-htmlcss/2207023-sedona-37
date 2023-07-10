@@ -187,6 +187,7 @@
       </footer>
       <!-- end footer -->
     </div>
+    <!-- Чтобы попап отображался необходимо добавить класс open-popup для section -->
     <section class="popup open-popup">
       <div class="popup-content" data-test="modal">
         <button class="popup-button close-popup" type="button" title="Закрыть окно">
@@ -198,20 +199,24 @@
         </button>
         <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
         <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="date-check-in">
-            <h3 class="input-title">Дата Заезда:</h3>
-            <input class="check-in-input" placeholder="Укажите дату" type="text" value="27 апреля 2020" name="date-check-in" required>
+          <div class="date-check-in">
+            <h3 class="input-title">
+              <label for="date-check-in">Дата Заезда:</label>
+            </h3>
+            <input class="check-in-input" placeholder="Укажите дату" type="text" value="27 апреля 2020" name="date-check-in" id="date-check-in" required>
             <span class="notification error">Мы не можем отправить вас в прошлое.</span>
-          </label>
-          <label class="date-check-out">
-            <h3 class="input-title">Дата Выезда:</h3>
+          </div>
+          <div class="date-check-out">
+            <h3 class="input-title">
+              <label >Дата Выезда:</label>
+            </h3>
             <input class="check-out-input" placeholder="Укажите дату" type="text" value="1 сентября 2023" name="date-check-out" required>
             <span class="notification">На эти даты есть свободные номера. Пока есть.</span>
-          </label>
+          </div>
           <div class="counter-wrapper">
-            <label class="popup-counter" for="count-adult">
-              <h3 class="input-title">Взрослые:</h3>
-            </label>
+            <h3 class="popup-counter">
+              <label class="input-title" for="count-adult">Взрослые:</label>
+            </h3>
             <div class="counter-content">
               <button class="count-button minus" type="button">
                 <span class="visually-hidden">Уменьшить количество человек</span>
@@ -227,9 +232,9 @@
                 </svg>
               </button>
             </div>
-            <label class="popup-counter child"  for="count-child">
-              <h3 class="input-title">Дети:</h3>
-            </label>
+            <h3 class="popup-counter child">
+              <label class="input-title" for="count-child">Дети:</label>
+            </h3>
             <div class="tooltip-wrapper">
               <button class="tooltip-button" type="button">
                 <span class="visually-hidden">информация по размещению детей</span>
