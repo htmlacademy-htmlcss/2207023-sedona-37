@@ -40,7 +40,7 @@
             </li>
           </ul>
           <div class="navigation-button-wrapper">
-            <a class="button header-button open-popup" href="#">Хочу сюда!</a>
+            <a class="button header-button" href="#">Хочу сюда!</a>
           </div>
         </nav>
       </header>
@@ -143,10 +143,10 @@
                     </ul>
                     <div class="range-scale">
                       <div class="range-bar" style="left: 10px; width: 206px">
-                        <button class="range-toggle toggle-min">
+                        <button class="range-toggle toggle-min" type="button" name="toggle-min">
                           <span class="visually-hidden">Изменить минимальную цену.</span>
                         </button>
-                        <button class="range-toggle toggle-max">
+                        <button class="range-toggle toggle-max" type="button"  name="toggle-max">
                           <span class="visually-hidden">Изменить максимальную цену.</span>
                         </button>
                       </div>
@@ -158,10 +158,10 @@
                     </legend>
                     <ul class="filter-group-button-list">
                       <li class="filter-group-button-item">
-                        <button class="apply-button button" type="submit" name="apply">Применить</button>
+                        <button class="apply-button button" type="submit">Применить</button>
                       </li>
                       <li class="filter-group-button-item">
-                        <button class="reset-button button" type="reset" name="reset">Сбросить</button>
+                        <button class="reset-button button" type="reset">Сбросить</button>
                       </li>
                     </ul>
                   </fieldset>
@@ -177,7 +177,7 @@
           <!-- sorting -->
           <section class="sorting">
             <h3 class="visually-hidden">Сортировка каталога гостинец</h3>
-            <p>Найдено гостиниц: <span class="result">38</span></p>
+            <p class="result-title">Найдено гостиниц: <span class="result">38</span></p>
             <div class="sorting-column">
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>

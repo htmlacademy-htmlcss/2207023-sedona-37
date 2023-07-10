@@ -183,8 +183,8 @@
       </footer>
       <!-- end footer -->
     </div>
-    <section class="popup" data-test="modal">
-      <div class="popup-content">
+    <section class="popup open-popup">
+      <div class="popup-content" data-test="modal">
         <button class="popup-button close-popup" title="Закрыть окно">
           <span class="visually-hidden">Закрыть окно</span>
           <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
                   <path d="M3 9v2h14V9H3Z" fill="#000"/>
                 </svg>
               </button>
-              <input class="count-input adult" placeholder="1" type="number" value="2" name="count-adult" id="count-adult" required>
+              <input class="count-input adult" placeholder="1" type="number" value="2" min="1" max="10" name="count-adult" id="count-adult" required>
               <button class="count-button plus" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +227,9 @@
               <h3 class="input-title">Дети:</h3>
             </label>
             <div class="tooltip-wrapper">
-              <button class="tooltip"  type="button"><span class="visually-hidden">информация по размещению детей</span></button>
+              <button class="tooltip-button" type="button">
+                <span class="visually-hidden">информация по размещению детей</span>
+              </button>
                 <p class="tooltip-text">
                   Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                 </p>
@@ -239,7 +241,7 @@
                   <path d="M3 9v2h14V9H3Z" fill="#000"/>
                 </svg>
               </button>
-              <input class="count-input child" placeholder="0" type="number" value="2" name="count-child" id="count-child" required>
+              <input class="count-input child" placeholder="0" type="number" value="2" min="0" max="10" name="count-child" id="count-child" required>
               <button class="count-button plus" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
