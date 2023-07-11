@@ -2239,13 +2239,16 @@ body {
 }
 
 .tooltip-text::before {
-  content: url(../images/tolltip-tail.svg);
+  content: "";
+  background-image: url(../images/tolltip-tail.svg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
   position: absolute;
   top: -15px;
   left: 50%;
 
-  width: 19px;
-  height: 9px;
+  width: 26px;
+  height: 15px;
 
   transform: translateX(-50%);
 }
