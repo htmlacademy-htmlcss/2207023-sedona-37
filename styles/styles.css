@@ -1140,6 +1140,8 @@ body {
   line-height: 23px;
   color: #ffffff;
 
+  cursor: pointer;
+
   transition: opacity 0.2s ease-in-out;
 }
 
