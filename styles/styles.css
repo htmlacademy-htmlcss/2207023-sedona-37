@@ -595,7 +595,7 @@ body {
 
 /* search hotel */
 .search-hotel {
-  padding: 96px 70px;
+  padding: 96px 70px 91px;
 }
 
 .search-hotel h2 {
@@ -624,6 +624,7 @@ body {
   width: fit-content;
   max-width: 592px;
   margin: 0 auto;
+  margin-bottom: 5px;
   padding: 8px 50px;
 
   font-size: 20px;
