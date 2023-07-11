@@ -595,7 +595,7 @@ body {
 
 /* search hotel */
 .search-hotel {
-  padding: 96px 70px;
+  padding: 96px 70px 91px;
 }
 
 .search-hotel h2 {
@@ -624,6 +624,7 @@ body {
   width: fit-content;
   max-width: 592px;
   margin: 0 auto;
+  margin-bottom: 5px;
   padding: 8px 50px;
 
   font-size: 20px;
@@ -1138,6 +1139,8 @@ body {
 
   line-height: 23px;
   color: #ffffff;
+
+  cursor: pointer;
 
   transition: opacity 0.2s ease-in-out;
 }
@@ -2164,6 +2167,8 @@ body {
   border: none;
   border-radius: 4px;
 
+  transition: background-color 0.2s ease-in-out;
+
   -moz-appearance: textfield;
 }
 
@@ -2177,11 +2182,15 @@ body {
 
 .count-input:hover {
   background-color: #e6e6e6;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .count-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .popup-counter.child {
@@ -2233,14 +2242,17 @@ body {
 }
 
 .tooltip-text::before {
-  content: url(../images/tolltip-tail.svg);
+  content: "";
   position: absolute;
   top: -15px;
   left: 50%;
 
-  width: 19px;
-  height: 9px;
+  width: 26px;
+  height: 15px;
 
+  background-image: url(../images/tolltip-tail.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
   transform: translateX(-50%);
 }
 
