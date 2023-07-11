@@ -2164,6 +2164,8 @@ body {
   border: none;
   border-radius: 4px;
 
+  transition: background-color 0.2s ease-in-out;
+
   -moz-appearance: textfield;
 }
 
@@ -2177,11 +2179,15 @@ body {
 
 .count-input:hover {
   background-color: #e6e6e6;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .count-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .popup-counter.child {
