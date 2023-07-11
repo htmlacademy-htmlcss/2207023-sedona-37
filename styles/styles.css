@@ -2240,9 +2240,6 @@ body {
 
 .tooltip-text::before {
   content: "";
-  background-image: url(../images/tolltip-tail.svg);
-  background-position: bottom center;
-  background-repeat: no-repeat;
   position: absolute;
   top: -15px;
   left: 50%;
@@ -2250,6 +2247,9 @@ body {
   width: 26px;
   height: 15px;
 
+  background-image: url(../images/tolltip-tail.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
   transform: translateX(-50%);
 }
 
